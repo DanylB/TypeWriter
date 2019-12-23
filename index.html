@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TypeWriter</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body  id="body" class="bgLight">
+  
+  <div id="helpBox" class="helpLight">
+  <img id="help"  src="img/bl.png" alt="">
+  </div>
+  
+  <div>
+    <input id="toggle" type="checkbox" >
+  </div>  
+
+  <div id="leftPanel"   class="leftPanelShow"  >
+    <div id="divs">
+      <div id="les_1">Урок 1</div>
+      <div id="les_2">Урок 2</div>
+      <div id="les_3">Урок 3</div>
+      <div id="les_4">Урок 4</div>
+      <div id="les_5">Урок 5</div>
+    </div>
+
+  </div>
+
+
+
+      <img id="trenId" class="tren" src="img/tren.png" alt="">
+      
+      <img id="testId" class="test" src="img/test.png" alt="">
+        
+ 
+
+    <img id="exitBtnId" class="exitBtn"  src="img/exitBtn6.png" alt="">
+
+  <div id="results" >
+
+    <div>
+       <p>Скорость</p>
+       <div id="speedType">0</div><span id="znMin"></span> 
+    </div>
+
+    <div>
+      <p>Ошибки</p>
+      <div id="colErr">0</div>
+    </div>
+    
+  </div>
+  
+
+  <form method="post" action="index4.js">
+ 
+      <div id="textarea">   
+        <div id="fields">  
+
+          <div id="str_in"></div>
+        </div>
+    </div>
+
+   </form>
+
+  <div id="box" class="boxLight">
+   
+    <div class="row_1">
+      <div id="KeyEE" class="key1">Ё</div>
+      <div id="Key1" class="key2">1</div>
+      <div id="Key2" class="key2">2</div>
+      <div id="Key3" class="key3">3</div>
+      <div id="Key4" class="key4">4</div>
+      <div id="Key5" class="key5">5</div>
+      <div id="Key6" class="key5">6</div>
+      <div id="Key7" class="key6">7</div>
+      <div id="Key8" class="key4">8</div>
+      <div id="Key9" class="key3">9</div>
+      <div id="Key0" class="key2">0</div>
+      <div id="KeyMinus" class="key2">-</div>
+      <div id="KeyRavno" class="key2">=</div>
+      <div id="KeyBcksp" class="key1">←</div>
+    </div>
+    
+    <div class="row_2">
+      <div id="KeyTab" class="key1">Tab</div>
+      <div id="KeyQ" class="key2">Й</div>
+      <div id="KeyW" class="key3">Ц</div>
+      <div id="KeyE" class="key4">У</div>
+      <div id="KeyR" class="key5">К</div>
+      <div id="KeyT" class="key5">Е</div>
+      <div id="KeyY" class="key6">Н</div>
+      <div id="KeyU" class="key6">Г</div>
+      <div id="KeyI" class="key4">Ш</div>
+      <div id="KeyO" class="key3">Щ</div>
+      <div id="KeyP" class="key2">З</div>
+      <div id="KeyXX" class="key2">Х</div>
+      <div id="KeyTdZn" class="key2">Ъ</div>
+      <div id="KeyBack_Slash" class="key1">\</div>
+    </div>
+    
+    <div class="row_3">
+      <div id="KeyCaps" class="key1">CapsLock</div>
+      <div id="KeyA" class="key2">Ф</div>
+      <div id="KeyS" class="key3">Ы</div>
+      <div id="KeyD" class="key4">В</div>
+      <div id="KeyF" class="key5">А</div>
+      <div id="KeyG" class="key5">П</div>
+      <div id="KeyH" class="key6">Р</div>
+      <div id="KeyJ" class="key6">О</div>
+      <div id="KeyK" class="key4">Л</div>
+      <div id="KeyL" class="key3">Д</div>
+      <div id="KeyDJ" class="key2">Ж</div>
+      <div id="KeyEEE" class="key2">Э</div>
+      <div id="KeyEnter" class="key1">Enter</div>
+      
+    </div>
+    
+    <div class="row_4">
+      <div class="key1" id="LShift">Shift</div>
+      <div id="KeyZ" class="key2">Я</div>
+      <div id="KeyX" class="key3">Ч</div>
+      <div id="KeyC" class="key4">С</div>
+      <div id="KeyV" class="key5">М</div>
+      <div id="KeyB" class="key5">И</div>
+      <div id="KeyN" class="key6">Т</div>
+      <div id="KeyM" class="key6">Ь</div>
+      <div id="KeyBB" class="key4">Б</div>
+      <div id="KeyQU" class="key3">Ю</div>
+      <div id="KeyDot" class="key2">.</div>
+      <div class="key1" id="RShift">Shift</div>
+    </div>
+    <div id="KeySpace"  class="KeySpaceClass"></div>
+  </div> 
+
+
+  <div id="container">
+    
+  <div id="boxHelp">
+      <p>Как печатать вслепую?</p>
+      <img  id="closeHelp" src="img/closeHelp.png" alt="">
+      
+       <p>Суть слепой печати состоит в том, что за каждым пальцем закреплена своя зона клавиш. <br>
+         Тренируйся, и благодаря мышечной памяти, каждый палец будет знать куда нажать.
+       </p> <br>
+       <hr>
+
+    <div id="div_1"> 
+      <p class="p">Посадка при печати текста</p>
+      <ul>
+        <li>Сиди ровно и держи спину прямой</li> <br>
+        <li>Локти согнуты под прямым углом</li> <br>
+        <li>Голова немного наклонена вперед</li> <br>
+        <li>Растояние от глаз до экрана 45-70см</li> <br>
+        <li>Расслабь мышцы плеч, рук и кистей. <br>
+          Кисти могут немного касаться стола <br> 
+          в нижней части клавиатуры </li>
+      </ul>
+      <img src="img/Sit.png" alt="">
+      <hr style="margin-top:20px;">
+    </div>
+
+    <div id="div_2">
+    <p class="p" style="height: 80px;">Исходная позиция</p>
+
+    <img src="img/fingers.png" alt="">
+      <p>Поставь пальци на ФЫВА и ОЛДЖ.  <br>
+        Ты всегда будешь начинать с этих клавиш 
+        и возвращаться к ним. <br>На клавишах А и О,
+         под указательными пальцами есть выступы.<br>
+         Они позволяют ориентироватся на клавиатуре вслепую.    
+      </p>
+      
+    </div>
+    <hr style="margin-top:20px;">
+
+    <div id="div_3">
+      <p class="p" style="margin-top:20px; height: 160px;">Схема клавиатуры</p>
+      <img src="img/keyFin.png" alt="">
+
+      <img src="img/finCol.png" alt="">
+    </div>
+
+    <hr style="margin-top:200px;">
+  
+    <div id="div_4">
+      <p class="p" style="margin-top:10px; height: 200px;">Движение пальцев</p>
+
+       <ul>
+        <li> Не подглядывай на клавиатуру во время печати. <br>
+         Просто скользи пальцами по клавишам, пока не найдешь <br>  
+         основную строку.</li> 
+         <br>
+
+         <li> Минимизируй движение кистей и пальцев до минимума. <br>
+          Держи руки пальцы как можно ближе к исходной позиции. <br>
+          Это увеличит скорость набора текста и снизит
+         нагрузку на кисти.</li> 
+         
+         <br>
+         <li> Следи за безымянными пальцами и мизинцами, так как они часто
+         остаются незадействованными.</li>
+        
+        </ul>
+        
+
+    </div>
+    
+
+    <div id="div_5">
+        <hr style="margin-top:20px;">
+        <p class="p" style="margin-top:20px; height: 200px;">Скорость печати</p>
+
+          <ul>
+            <li>Не пытайся сразу печатать со скоростью света. Ускоряйся, только когда все 10
+                пальцев привыкнут нажимать правильные клавиши.</li> <br>
+            <li>Не торопись когда печатаешь, чтобы избежать ошибок. Скорость будет возрастать
+                постепенно.</li> <br>
+            <li>Всегда просматривай текст на одно-два слова вперед.</li> <br>
+            <li>Пройди все уроки на клавиатурном тренажере. И твоя скорость станет выше
+                средней скорости печати.</li>
+          </ul>
+    </div> 
+</div>
+</div>
+
+
+
+<div id="fingersColId" class="fingersCol">
+  <div id="mez"><p>Мизинец</p></div>
+  <div id="bezim"><p>Безымянный</p></div>
+  <div id="ser"><p>Средний</p></div>
+  <div id="ukaz_left"><p>Указ.левый</p></div>
+  <div id="ukaz_right"><p>Указ.правый</p></div>
+</div>
+
+<div id="conteinAlRes">
+  <div id="alertRes">
+     <div>Результат</div>
+     <label>Скорость  <span id="zMin">220 зн/мин</span></label>    
+     <label>Нажатий <span id="colTypesAll"> 75</span></label> 
+     <label>Верных  <span id="colTypesTr"> 70</span></label> 
+     <label>Не верных  <span id="colTypesFl">5</span></label> 
+     <label>Аккуратность <span id="acurate">98.6%</span></label> 
+     <button id="btnRepeat">Повторить</button>
+     <button id="btnOk">Ок</button>
+     
+  </div>
+</div>
+
+
+ <script>   
+        require('./index4.js');
+        require('./script.js');
+        require('./render.js');
+</script>
+</body>
+</html>
